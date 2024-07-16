@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    /* Cor de fundo da página */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.logo img {
+    max-height: 50px;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    float: left;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background: #b4b4b4;
+    color: #464646;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.banner {
+    background-image: url("../assets/logoolimpiada.png   ");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 450px;
+    gap: 30px;
+}
+
+.banner .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: auto;
+    backdrop-filter: blur(1px);
+    /* Define o desfoque */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Define a cor de fundo transparente */
+    padding: 20px;
+    /* Ajuste conforme necessário */
+}
+
+.banner .inscreva {
+    background-color: rgb(207, 177, 56);
+    display: flex;
+    width: 350px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    color: #3a3a3a;
+    text-shadow: 0px 0px 5px #f4f07e;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.inscreva:hover {
+    cursor: pointer;
+    background-color: #515151;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px #ffffff;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.inscricao a {
+    text-decoration: none;
+    color: #FFFFFF;
+    /* Branco */
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    /* Branco */
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.inscricao a:hover {
+    background-color: #FFFFFF;
+    /* Branco */
+    color: #0033A0;
+    /* Azul */
+}
+
+.destaque-card {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.quadro {
+    margin-top: 80px;
+    text-align: justify;
+    border: 1px solid black;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.modalidade {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modalidade img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.project-images {
+    text-align: center;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-container div {
+    text-align: center;
+    margin: 10px;
+}
+
+.images-container div li,
+.images-containerbaixo div li {
+    list-style-type: none;
+    background-color: red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.images-container div li a,
+.images-containerbaixo div li a {
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.images-container div li:hover,
+.images-containerbaixo div li:hover {
+    background-color: green;
+    font-size: 17px;
+    transition: .2s;
+}
+
+.images-containerbaixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-containerbaixo div {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-description {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffffff;
+    /* Preto */
+    border-top: 1px solid black;
+    color: #FFFFFF;
+    /* Branco */
+    text-align: center;
+    padding: 10px 0;
+
+    bottom: 0;
+    width: 100%;
+}
+
+.inscreva .no-link {
+    font-weight: bold;
+    pointer-events: none; /* Desativa o clique no link */
+    color: inherit; /* Mantém a cor do texto */
+    text-decoration: none; /* Remove a sublinhado do link */
+}
+
+        /* Adicione estas regras de CSS ao seu arquivo CSS */
+        .banner {
+            width: 80%;
+            height: auto; /* Altura automática para manter a proporção da imagem */
+            overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse a área do banner */
+            margin: 0 auto; /* Centralizar horizontalmente */
+        }
+        .banner img {
+            width: 100%;
+            height: auto; /* Manter a proporção da imagem */
+            display: block; /* Remover espaço em branco ao redor da imagem */
+        }
